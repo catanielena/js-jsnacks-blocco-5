@@ -6,13 +6,13 @@
 
 function alter(arr1, arr2) {
     var group = [];
-    if(arr1.length > arr1.length) {
-        for (let i = 0; i<arr1.length; i++) {
+    if(arr1.length > arr2.length) {
+        for (let i = 0; i<arr2.length; i++) {
             group.push(arr1[i]);
             group.push(arr2[i]);
         }
     } else {
-        for (let i = 0; i<arr2.length; i++) {
+        for (let i = 0; i<arr1.length; i++) {
             group.push(arr1[i]);
             group.push(arr2[i]);
         }
