@@ -72,5 +72,5 @@ for (let i = 0; i< orto.length; i++) {
 }
 console.log(`zuccGd`, zuccGd);
 console.log(`zuccPc`, zuccPc);
-console.log(`zuccSmallWeight`, zuccPcPeso, `g`);
-console.log(`zuccGdWeight`, zuccPcPeso, `g`);
+console.log(`zuccGdPeso`, zuccGdPeso, `g`);
+console.log(`zuccPcPeso`, zuccPcPeso, `g`);
