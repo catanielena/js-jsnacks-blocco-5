@@ -64,13 +64,13 @@ let zucchineGrandePeso = 0;
 for (let i = 0; i< orto.length; i++) {
     if(orto[i].lunghezza <15) {
         zucchinaPiccole.push(orto[i]);
-        zucchinePiccolePeso += zucchinaPiccole[i].peso;
         for (let i = 0; i< zucchinaPiccole.length; i++) {
+            zucchinePiccolePeso += zucchinaPiccole[i].peso;
         }
     } else {
         zucchinaGrande.push(orto[i]);
-        zucchineGrandePeso += zucchinaGrande[i].peso;
         for (let i = 0; i< zucchinaGrande.length; i++) {
+            zucchineGrandePeso += zucchinaGrande[i].peso;
         }
     }
 }
