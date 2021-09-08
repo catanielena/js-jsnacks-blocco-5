@@ -56,23 +56,21 @@ var orto = [
     
 ];
 
-let zucchinaPiccole= [];
-let zucchinaGrande= [];
-let zucchinePiccolePeso = 0;
-let zucchineGrandePeso = 0;
+let zuccPc= [];
+let zuccGd= [];
+let zuccPcPeso = 0;
+let zuccGdPeso = 0;
 
 for (let i = 0; i< orto.length; i++) {
-    if(orto[i].lunghezza <15) {
-        zucchinaPiccole.push(orto[i]);
-        for (let i = 0; i< zucchinaPiccole.length; i++) {
-            zucchinePiccolePeso += zucchinaPiccole[i].peso;
-        }
+    if(orto[i].lunghezza >15) {
+        zuccGd.push(orto[i]);
+        zuccGdPeso += orto[i].peso;
     } else {
-        zucchinaGrande.push(orto[i]);
-        for (let i = 0; i< zucchinaGrande.length; i++) {
-            zucchineGrandePeso += zucchinaGrande[i].peso;
-        }
+        zuccPc.push(orto[i]);
+        zuccPcPeso += orto[i].peso;
     }
 }
-console.log(`zucchinePiccolePeso`, zucchinePiccolePeso);
-console.log(`zucchineGrandePeso`, zucchineGrandePeso);
+console.log(`zuccGd`, zuccGd);
+console.log(`zuccPc`, zuccPc);
+console.log(`zuccSmallWeight`, zuccPcPeso, `g`);
+console.log(`zuccGdWeight`, zuccPcPeso, `g`);
