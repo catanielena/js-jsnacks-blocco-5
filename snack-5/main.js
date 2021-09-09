@@ -8,10 +8,8 @@ function arrWithinARange(arr, a, b) {
     if (isNaN(a) || isNaN(b) || a> b || b>arr.length) {
         return null;
     } else {
-        for(let i = 0; i < arr.length; i++) {
-            if (i > a && i < b) {
-                result.push(arr[i]);
-            } 
+        for(let i = a; i <= b; i++) {
+            result.push(arr[i]);
         }
         return result;
     }
